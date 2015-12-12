@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="json2.js"></script>
+</head>
+<body>
+    <h1>一个简单的HTTP服务器，让它实现如下功能：</h1>
+    <ul>
+        <li>%</li>
+    </ul>
+
+
+    <script>
+
+        var json1 =
+        {
+            'titles': [
+                '1，异步获取存放在JSON文件中的文章的标题;',
+                '2，异步获取简单的HTML模板;',
+                '3，把那些标题组装到HTML页面里;',
+                '4,把HTML页面发送给用户;'
+            ]
+        };
+        var jsonstr = JSON.stringify(json1);
+
+        console.log(jsonstr)
+
+        var json2 = JSON.parse(jsonstr);
+
+        console.log(json2);
+    </script>
+</body>
+</html>
